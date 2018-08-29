@@ -9,12 +9,14 @@ package Mediana;
  *
  * @author renat
  */
-public class Mediana {
-    public double getMediana(double[] v){
-        if(v.length %2 != 1){
-            return v[v.length/2];
+public class CalcEstatistica {
+
+    public double getMediana(double[] v) {
+        int meio = v.length / 2;
+        if (v.length % 2 == 1) {
+            return v[meio];
+        } else {
+            return (v[meio] + v[meio - 1]) / 2;
         }
-        return (v[v.length / 2] + v[v.length/2+1])/2;
     }
-    
 }

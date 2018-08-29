@@ -22,9 +22,21 @@ public class EstatisticaTest {
     public void testeVetorOrdenadoImpar() {
         double[] vector = {1, 2, 3, 4, 5};
         
-        Mediana m = new Mediana();
+        CalcEstatistica calcula = new CalcEstatistica();
         
-        double res = m.getMediana(vector);
+        
+        double res = calcula.getMediana(vector);
         assertEquals(res, 3, 0.01);
+    }
+    
+    @Test
+    public void testeVetorOrdenadoPar() {
+        double[] vector = {1, 2, 3, 5, 5, 6};
+        
+        CalcEstatistica calcula = new CalcEstatistica();
+        
+        double res = calcula.getMediana(vector);
+        assertEquals(res, 4, 0.01);
+                
     }
 }
