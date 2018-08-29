@@ -49,4 +49,49 @@ public class EstatisticaTest {
         double res = calcula.getMedia(vector);
         assertEquals(res, 3, 0.01); 
     }
+    @Test
+    public void testeMenor() {
+        double[] vector = {1, 2, 3, 6};
+
+        CalcEstatistica calcula = new CalcEstatistica();
+
+        double res = calcula.getMenor(vector);
+        assertEquals(res, 1, 0.01);
+    }
+    @Test
+    public void testeMaior() {
+        double[] vector = {1, 2, 3, 6};
+
+        CalcEstatistica calcula = new CalcEstatistica();
+
+        double res = calcula.getMaior(vector);
+        assertEquals(res, 6, 0.01);
+    }
+    @Test
+    public void testeAbaixoMedia() {
+        double[] vector = {1, 2, 3, 6};
+
+        CalcEstatistica calcula = new CalcEstatistica();
+
+        double res = calcula.getAbaixoMedia(vector);
+        assertEquals(res, 2, 0.01);
+    }
+    @Test
+    public void testeAcimaMedia() {
+        double[] vector = {1, 2, 3, 6};
+
+        CalcEstatistica calcula = new CalcEstatistica();
+
+        double res = calcula.getAcimaMedia(vector);
+        assertEquals(res, 1, 0.01);
+    }
+    @Test
+    public void testeDesvioPadrao() {
+        double[] vector = {1, 2, 3, 6};
+
+        CalcEstatistica calcula = new CalcEstatistica();
+
+        double res = calcula.getDesvioPadrao(vector);
+        assertEquals(res, 1.870829f, 0.01);
+    }
 }
