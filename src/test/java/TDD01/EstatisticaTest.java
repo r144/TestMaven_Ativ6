@@ -39,4 +39,14 @@ public class EstatisticaTest {
         assertEquals(res, 4, 0.01);
                 
     }
+    
+    @Test
+    public void testeMedia() {
+        double[] vector = {1, 2, 3, 6};
+
+        CalcEstatistica calcula = new CalcEstatistica();
+
+        double res = calcula.getMedia(vector);
+        assertEquals(res, 3, 0.01); 
+    }
 }

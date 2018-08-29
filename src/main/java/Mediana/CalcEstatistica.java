@@ -19,4 +19,11 @@ public class CalcEstatistica {
             return (v[meio] + v[meio - 1]) / 2;
         }
     }
+    public double getMedia(double[] v) {
+        double res = 0;
+        for(int i=0;i<v.length;i++){
+            res += v[i];
+        }
+        return res/v.length;
+    }
 }
