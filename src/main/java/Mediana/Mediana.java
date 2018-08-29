@@ -11,7 +11,10 @@ package Mediana;
  */
 public class Mediana {
     public double getMediana(double[] v){
-        return 3.0;
+        if(v.length %2 != 1){
+            return v[v.length/2];
+        }
+        return (v[v.length / 2] + v[v.length/2+1])/2;
     }
     
 }

@@ -13,9 +13,9 @@ import Mediana.*;
  *
  * @author renat
  */
-public class MedianaTest {
+public class EstatisticaTest {
 
-    public MedianaTest() {
+    public EstatisticaTest() {
     }
 
     @Test
